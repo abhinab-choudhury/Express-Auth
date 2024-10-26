@@ -1,0 +1,19 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
+
+
+/*
+  - Search ts-handbook
+  - go into Project Configration
+  - Whats is a tsconfig.json 
+  - refer the github repo and use this pre-defined bases for ease
+    i.e https://github.com/tsconfig/bases
+*/
