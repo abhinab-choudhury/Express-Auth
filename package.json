@@ -9,7 +9,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint",
-    "lint:fix":"eslint --fix"
+    "lint:fix": "eslint --fix",
+    "migrate": "prisma migrate dev"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +31,7 @@
     "typescript-eslint": "^8.11.0"
   },
   "dependencies": {
+    "@prisma/client": "^5.21.1",
     "@tsconfig/node20": "^20.1.4",
     "dot-env": "^0.0.1",
     "express": "^4.21.1"

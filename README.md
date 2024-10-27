@@ -1,4 +1,6 @@
-# Backend with with Typescript + prisma
+# Express-Auth
+
+### Auth-Backend with Express.js + TS + Passport.js + prisma
 
 #### Source: Read the [Typescript Handbook](https://www.typescriptlang.org/)
 
