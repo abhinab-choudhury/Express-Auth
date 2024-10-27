@@ -2,7 +2,13 @@ import express, { NextFunction, Request, Response } from "express";
 
 const app = express();
 
+
 // Health Route
+app.get("/health", (_req: Request, res: Response) => {
+  res.send("All Good");
+});
+
+// Home Route
 app.get("/", (_req: Request, res: Response) => {
   res.status(200).send("Server Running Successfully.");
 });
