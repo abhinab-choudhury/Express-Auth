@@ -37,19 +37,28 @@
       </div>
       <div class="line"></div>
       <div class="media-options">
-        <a href="#" class="field github">
+        <button onclick="GithubOAuth()" class="field github">
           <i class='bx bxl-github'></i>
           <span>Login with Github</span>
         </a>
       </div>
       <div class="media-options">
-        <a href="#" class="field google">
+        <button onclick="GoogleOAuth()" class="field google">
           <i class='bx bxl-google'></i>
           <span>Login with Google</span>
-        </a>
+        </button>
       </div>
     </div>
   </section>
+<script>
+  function GoogleOAuth() {
+    window.open(`http://localhost:8080/api/v1/auth/google`,'_self')
+  }
+  function GithubOAuth() {
+    window.open(`http://localhost:8080/api/v1/auth/github`,'_self')
+  }
+</script>
 </body>
+
 
 </html>
