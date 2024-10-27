@@ -7,6 +7,7 @@
 - source of learning : [Youtube Playlist](https://www.youtube.com/watch?v=qrSE1MCPvuU&list=PLaY6YJMqp51dW3zHhw0Iqy8hI86SKI8n-)
 - setting up **ts** + **Jest**: [Youtube Link](https://www.youtube.com/watch?v=-sswKgneCVI)
 - setting with **ts** + **preitter** + **eslint** + **jest**(Testing Framework): [Youtube Link](https://www.youtube.com/watch?v=413C1PlYIko)
+- Article: [Link](https://dev.to/tirthpatel/deploy-node-ts-express-typescript-on-vercel-284h)
 
 
 ## Steps to setup in ESlinst + Prettier with Jest:
