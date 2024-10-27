@@ -3,7 +3,6 @@ import express, { NextFunction, Request, Response } from "express";
 const app = express();
 
 
-// Health Route
 app.get("/health", (_req: Request, res: Response) => {
   res.status(200).json({
     message:"Server is Healthy",
@@ -16,7 +15,7 @@ app.get("/health", (_req: Request, res: Response) => {
 
 // Home Route
 app.get("/", (_req: Request, res: Response) => {
-  res.send("<h1>Express Server</h1>")
+  res.send("<h1>Express Typescript on Vercel</h1>")
 });
 
 app.listen(8080, () => {
