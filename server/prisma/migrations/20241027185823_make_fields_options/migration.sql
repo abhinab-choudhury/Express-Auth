@@ -1,0 +1,6 @@
+-- AlterTable
+ALTER TABLE "User" ALTER COLUMN "google_id" DROP NOT NULL,
+ALTER COLUMN "github_id" DROP NOT NULL,
+ALTER COLUMN "about" DROP NOT NULL,
+ALTER COLUMN "display_name" DROP NOT NULL,
+ALTER COLUMN "profile_pic_url" DROP NOT NULL;

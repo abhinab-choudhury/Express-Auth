@@ -15,14 +15,12 @@ datasource db {
 
 model User {
   id              String   @id @default(uuid())
-  username        String
-  email           String   @unique
-  display_name    String
-  about           String
-  profile_pic_url String
-  password        String
-  google_id       String   @unique
-  github_id       String   @unique
+  display_name    String?
+  profile_pic_url String?
+  password        String?
+  email           String?  @unique
+  google_id       String?  @unique
+  github_id       String?  @unique
   isActive        Boolean  @default(false)
   created_at      DateTime @default(now())
   updated_at      DateTime @updatedAt

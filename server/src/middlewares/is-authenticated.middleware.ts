@@ -1,6 +1,4 @@
-
 // Checks if the user is Authenticated
-const isAuthenticated = () => {
-}
+const isAuthenticated = () => {};
 
 export default isAuthenticated;
