@@ -1,5 +1,5 @@
 import express, { NextFunction, Request, Response } from "express";
-import AuthRouter from './routes/auth.routes';
+import AuthRouter from "./routes/auth.routes";
 
 const app = express();
 
@@ -10,7 +10,7 @@ app.get("/health", (_req: Request, res: Response) => {
     message: "Server is Healthy",
     data: {},
     errors: {},
-    success: true
+    success: true,
     status: 200,
   });
 });

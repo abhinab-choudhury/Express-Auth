@@ -29,14 +29,10 @@ dotenv.config();
 exports.PORT = process.env.PORT;
 exports.FRONTEND_URL = process.env.FRONTEND_URL;
 exports.DATABASE_URL = process.env.DATABASE_URL;
-const requiredEnvVariables = [
-    'PORT',
-    'FRONTEND_URL',
-    'DATABASE_URL'
-];
+const requiredEnvVariables = ["PORT", "FRONTEND_URL", "DATABASE_URL"];
 requiredEnvVariables.some((envVar) => {
     if (!process.env[envVar]) {
-        console.log(envVar, 'is required.');
+        console.log(envVar, "is required.");
         process.exit(1);
     }
 });
