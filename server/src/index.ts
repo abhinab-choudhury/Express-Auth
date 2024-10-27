@@ -5,12 +5,18 @@ const app = express();
 
 // Health Route
 app.get("/health", (_req: Request, res: Response) => {
-  res.send("All Good");
+  res.status(200).json({
+    message:"Server is Healthy",
+    data:{},
+    errors:{},
+    success:true,
+    status:200
+  })
 });
 
 // Home Route
 app.get("/", (_req: Request, res: Response) => {
-  res.status(200).send("Server Running Successfully.");
+  res.send("<h1>Express Server</h1>")
 });
 
 app.listen(8080, () => {

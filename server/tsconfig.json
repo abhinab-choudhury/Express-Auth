@@ -1,11 +1,11 @@
 {
   "extends": "@tsconfig/node20/tsconfig.json",
   "compilerOptions": {
-    "outDir": "./public",
+    "outDir": "./",
     "rootDir": "./src",
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src/**/*"],
+  "include": ["./**/*", "src/db", "src/middlewares", "src/routes", "src/utils", "src/controllers", "src/index.ts"],
   "exclude": ["node_modules", "dist"]
 }
 
